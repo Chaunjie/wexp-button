@@ -1,0 +1,23 @@
+{
+  "name": "wexp-button",
+  "version": "1.0.0",
+  "description": "wexp button",
+  "main": "index.xu",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaunjie/wexp-button.git"
+  },
+  "keywords": [
+    "wexp",
+    "button"
+  ],
+  "author": "chaunjie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaunjie/wexp-button/issues"
+  },
+  "homepage": "https://github.com/Chaunjie/wexp-button#readme"
+}

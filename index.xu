@@ -1,0 +1,40 @@
+<style lang="less" src="./index.less"></style>
+<template>
+  <button class="btn {{ empty ? 'btn-empty' : '' }} custom-class btn-{{name}} btn-{{size}}" disabled="{{disabled}}">
+    <slot/>
+  </button>
+</template>
+<script>
+  import wexp from 'wexp/index'
+
+  export default class CellGroup extends wexp.component {
+    config = {
+      'component': true
+    }
+
+    externalClasses = ['custom-class']
+
+    options = {
+      multipleSlots: true
+    }
+
+    properties = {
+      name: {
+        type: String,
+        value: ''
+      },
+      size: {
+        type: String,
+        value: ''
+      },
+      disabled: {
+        type: Boolean,
+        value: false
+      },
+      empty: {
+        type: Boolean,
+        value: false
+      }
+    }
+  }
+</script>
